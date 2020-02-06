@@ -3,6 +3,9 @@
 
 ## Use ##
 ```shell
+[frequency]: min number of the commentary subtitle, I suggest greater than 10
+             as low freqency user a not of interest, and it takes time to calulate the hash
+
 python find_user.py [xml_file_name] [frequency]
 ```
 Example
