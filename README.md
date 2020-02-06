@@ -29,7 +29,7 @@ Video: https://www.bilibili.com/video/av73124851?spm_id_from=333.851.b_62696c695
 
 2. search for "cid"
 
-![picture alt](./screenshots/2.png)
+![picture alt](./screenshots/2.PNG)
 
 3. address = f"http://comment.bilibili.com/{cid}.xml" 
 
