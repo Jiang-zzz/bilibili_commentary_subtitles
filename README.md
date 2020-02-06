@@ -1,10 +1,11 @@
 # bilibili_commentary_subtitles
 根据发弹幕的频率来查找恶意刷弹幕的人或者特别关心你的人
+find uid by frequency of commentary subtitle (bilibili)
 
 ## Use ##
 ```shell
 [frequency]: min number of the commentary subtitle, I suggest greater than 10
-             as low freqency user a not of interest, and it takes time to calulate the hash
+             as low frequency users are not of interest, and it takes time to calulate the hash
 
 python find_user.py [xml_file_name] [frequency]
 ```
