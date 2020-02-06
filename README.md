@@ -1,0 +1,2 @@
+# bilibili_commentary_subtitles
+根据发弹幕的频率来查找恶意刷弹幕的人或者特别关心你的人
