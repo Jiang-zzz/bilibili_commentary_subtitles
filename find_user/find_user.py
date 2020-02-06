@@ -51,11 +51,6 @@ def Sort_Tuple(tup):
     return tup
 
 
-# xml_file_name = "147055806.xml"
-# result = find_user(xml_file_name, 5)
-# for i in result:
-#     print(i)
-
 if __name__ == "__main__":
     xml_file_name = sys.argv[1]
     frequency = int(sys.argv[2])
