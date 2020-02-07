@@ -42,7 +42,7 @@ Video: https://www.bilibili.com/video/av73124851?spm_id_from=333.851.b_62696c695
 
     cid = 110417133
 
-    address = http://comment.bilibili.com/110417133.xml
+    address = "http://comment.bilibili.com/110417133.xml"
 ```
 
     save it and it's done! ^_^
