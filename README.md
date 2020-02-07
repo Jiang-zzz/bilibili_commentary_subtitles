@@ -6,7 +6,7 @@ find user by frequency of commentary subtitles (bilibili.com)
 ## Use ##
 ```shell
 [frequency]: min number of the commentary subtitle, I suggest greater than 10
-             as low frequency users are not of interest, and it takes time to calulate the hash
+             as low frequency users are not of interest, and it takes time to calulate the hash_code
 
 python find_user.py [xml_file_name] [frequency]
 ```
@@ -16,7 +16,7 @@ python find_user.py 110417133.xml 10
 ```
 Result
 
-(user_address, count_of_commentary subtitle)
+(user_address, count_of_commentary_subtitle)
 ```poweshell
 ('https://space.bilibili.com/1938271', 17)
 ('https://space.bilibili.com/419280845', 16)
