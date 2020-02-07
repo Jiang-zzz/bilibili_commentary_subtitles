@@ -36,11 +36,14 @@ Video: https://www.bilibili.com/video/av73124851?spm_id_from=333.851.b_62696c695
 
 ![picture alt](./screenshots/2.PNG)
 
-3. address = f"http://comment.bilibili.com/{cid}.xml" 
+3. 
+```python
+    address = f"http://comment.bilibili.com/{cid}.xml" 
 
     cid = 110417133
 
-    http://comment.bilibili.com/110417133.xml
+    address = http://comment.bilibili.com/110417133.xml
+```
 
     save it and it's done! ^_^
  
