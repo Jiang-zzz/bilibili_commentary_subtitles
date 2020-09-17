@@ -1,5 +1,6 @@
-import sys
-import time
+# credit to https://github.com/Aruelius/crc32-crack
+# import sys
+# import time
 
 CRCPOLYNOMIAL = 0xEDB88320
 crctable = [0 for x in range(256)]
@@ -83,16 +84,16 @@ def main(string):
 def hash_to_id(hash_count_list):
     create_table()
     hash_dic = {}
-    id_count_list = []
+    id_hash_count_list = []
     for hash_code, count in hash_count_list:
         if hash_dic.get(hash_code) is None:
             id_ = main(hash_code)
             hash_dic[hash_code] = id_
         else:
             id_ = hash_dic[hash_code]
-        id_count_list.append(tuple([id_, count]))
+        id_hash_count_list.append(tuple([id_, hash_code, count]))
 
-    return id_count_list
+    return id_hash_count_list
 
 
 # if __name__ == "__main__":

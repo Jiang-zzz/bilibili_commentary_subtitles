@@ -29,31 +29,21 @@ def find_user(xml_file_name, frequency):
     frequent_hash_list = frequent_users_hash.keys()
     hash_count_list = [(k, frequent_users_hash[k]) for k in frequent_hash_list]
 
-    id_count_list = hash_to_id(hash_count_list)
-    sorted_list = Sort_Tuple(id_count_list)
+    id_hash_count_list = hash_to_id(hash_count_list)
+    id_hash_count_list.sort(key=lambda x: x[2], reverse=True)
 
     address_head = "https://space.bilibili.com/"
     address_count_list = [
-        tuple([f"{address_head}{id_}", count]) for id_, count in sorted_list
+        tuple([f"{address_head}{id_}", hash_code, count])
+        for id_, hash_code, count in id_hash_count_list
     ]
     return address_count_list
-
-
-def Sort_Tuple(tup):
-    lst = len(tup)
-    for i in range(0, lst):
-
-        for j in range(0, lst - i - 1):
-            if tup[j][1] < tup[j + 1][1]:
-                temp = tup[j]
-                tup[j] = tup[j + 1]
-                tup[j + 1] = temp
-    return tup
 
 
 if __name__ == "__main__":
     xml_file_name = sys.argv[1]
     frequency = int(sys.argv[2])
+    find_user(xml_file_name, frequency)
     results = find_user(xml_file_name, frequency)
     for result in results:
         print(result)
