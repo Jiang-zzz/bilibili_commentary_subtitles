@@ -1,6 +1,4 @@
 # credit to https://github.com/Aruelius/crc32-crack
-# import sys
-# import time
 
 CRCPOLYNOMIAL = 0xEDB88320
 crctable = [0 for x in range(256)]
@@ -94,11 +92,3 @@ def hash_to_id(hash_count_list):
         id_hash_count_list.append(tuple([id_, hash_code, count]))
 
     return id_hash_count_list
-
-
-# if __name__ == "__main__":
-#     create_table()
-#     start_time = time.time()
-#     print(main(sys.argv[1]))
-#     end_time = time.time()
-#     print(f"耗时: {round(end_time - start_time, 2)}秒")
